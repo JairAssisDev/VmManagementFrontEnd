@@ -2,24 +2,29 @@
 
 Este projeto foi desenvolvido como parte do desafio técnico para a vaga de Desenvolvedor Júnior no time Ustore/Claro.
 
-## ✅ Funcionalidades Implementadas
+## ✅ Funcionalidades
 
-### Backend (100% concluído):
-- [x] Autenticação de usuário (login) com Spring Security.
-- [x] API REST para:
-  - Listar máquinas virtuais.
-  - Cadastrar nova VM (limite de 5 por usuário).
-  - Iniciar, pausar, parar e excluir VMs.
-- [x] Validação de campos e regras de negócio.
-- [x] Controle de sessões com token JWT.
-- [x] Integração pronta com frontend Angular.
+### Backend (100% concluído - em repositório separado)
 
-### Frontend:
-- [x] Tela de login funcional, com validações e integração com backend.
-- [ ] Dashboard com gráficos (barra e pizza) utilizando Chart.js.
-- [ ] Tela de listagem de máquinas virtuais com tabela e ações.
-- [ ] Tela de cadastro de nova máquina virtual (validações e regras).
-- [ ] Ações de controle das VMs (iniciar, pausar, parar, excluir).
+O backend da aplicação foi totalmente desenvolvido em Java com Spring Boot e está disponível neste repositório:
+
+🔗 [Repositório do Backend](https://github.com/usuario/backend-vm-monitoramento) <!-- substitua pelo link real -->
+
+**Funcionalidades:**
+- Autenticação com Spring Security e JWT.
+- API REST para listar, criar, iniciar, pausar, parar e excluir máquinas virtuais.
+- Regras de negócio: limite de 5 VMs por usuário.
+- Integração completa com o frontend via HTTP.
+
+---
+
+### Frontend (em desenvolvimento)
+
+- [x] Tela de login com integração ao backend.
+- [ ] Dashboard com gráficos (barra e pizza) usando Chart.js.
+- [ ] Tela de listagem de máquinas virtuais.
+- [ ] Tela de cadastro de nova VM.
+- [ ] Ações: iniciar, pausar, parar e excluir VMs.
 
 ## 📦 Tecnologias Utilizadas
 
@@ -27,19 +32,58 @@ Este projeto foi desenvolvido como parte do desafio técnico para a vaga de Dese
 - Angular 17
 - Typescript
 - CSS
-- Chart.js (para gráficos)
 
-### Backend:
+### Backend (repositório separado):
 - Java 17
 - Spring Boot
 - Spring Security
-- JWT (JSON Web Token)
+- JWT
 - REST API
 
 ## ▶️ Como Rodar o Projeto
 
-### Backend (Spring Boot)
+### Backend
+Acesse o repositório e siga as instruções:  
+🔗 [Backend no GitHub](https://github.com/JairAssisDev/Vmmanagement)
 
-1. Acesse a pasta do backend:
+### Frontend
+
+1. Acesse a pasta do frontend:
    ```bash
-   cd backend
+   cd frontend
+   ```
+
+2. Instale o gerenciador de pacotes e Angular CLI:
+   ```bash
+   npm i
+   npm install -g npm@11.2.0
+   npm install -g @angular/cli@17
+   ```
+
+3. Instale as dependências do projeto:
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor Angular:
+   ```bash
+   ng s
+   ```
+
+5. Acesse no navegador:
+   ```
+   http://localhost:4200
+   ```
+
+## 🧪 Credenciais de Teste
+
+- **Email:** admin@admin.com  
+- **Senha:** 123456
+
+## 📅 Prazo
+
+Entrega até **07/04/2025 às 9:00h**.
+
+---
+
+Desenvolvido com 💻 por **Jair Victor**.
