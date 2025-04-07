@@ -1,0 +1,7 @@
+<button
+    [ngClass]="[getClassList()]"
+    [disabled]="isDisabled()"
+    [class.disabled]="isDisabled()"
+>
+    <ng-content></ng-content>
+</button>

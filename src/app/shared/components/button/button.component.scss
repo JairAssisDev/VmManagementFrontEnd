@@ -1,0 +1,57 @@
+:host {
+    display: block;
+    position: relative;
+}
+
+button {
+    height: 2.5rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    cursor: pointer;
+
+    &:disabled,
+    &.disabled {
+        background-color: #cccccc !important;
+        cursor: auto;
+        opacity: 0.7;
+    }
+
+    &.default {
+        background-color: var(--primary-white);
+        color: var(--primary-blue);
+        border: 1px solid var(--primary-blue);
+    }
+
+    &.blue {
+        background-color: var(--primary-blue);
+        color: var(--primary-white);
+    }
+
+    &.fill {
+        width: 100%;
+    }
+
+    &.extra-small {
+        width: 15rem;
+    }
+
+    &.small {
+        width: 21.25rem;
+    }
+
+    &.medium {
+        width: 28rem;
+    }
+
+    &.large {
+        width: 32rem;
+    }
+}

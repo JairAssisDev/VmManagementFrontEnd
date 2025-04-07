@@ -1,0 +1,47 @@
+label {
+  color: var(--primary-black);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.input-container {
+  margin-top: 0.5rem;
+  width: 100%;
+  position: relative;
+
+  input {
+      background-color: transparent;
+      border: 1px solid var(--input-border);
+      border-radius: 8px;
+      color: var(--primary-black);
+      font-size: 0.875rem;
+      font-weight: 500;
+      outline: 0;
+      padding: 0 1rem;
+      height: 40px;
+
+      &.extra-small {
+          width: 100px;
+      }
+  
+      &.small {
+          width: 180px;
+      }
+  
+      &.medium {
+          width: 220px;
+      }
+  
+      &.large {
+          width: 310px;
+      }
+  
+      &.fill {
+          width: 100%;
+      }       
+
+      &.is-invalid {
+          border: 1px solid var(--error);
+      }
+  }
+}

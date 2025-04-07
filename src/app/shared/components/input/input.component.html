@@ -1,0 +1,14 @@
+@if(label()){
+    <label>{{label()}}</label>
+}
+<div class="input-container">
+    <input #target
+        [placeholder]="placeholder()"
+        [ngClass]="getClassList()" 
+        [type]="type()"
+        [(ngModel)]="value" 
+        (focus)="onTouched && onTouched()"
+        (input)="onChange && onChange(value)"
+        [disabled]="isDisabled"
+    >
+</div>
