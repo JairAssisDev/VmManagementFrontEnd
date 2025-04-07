@@ -11,10 +11,12 @@ O backend da aplicação foi totalmente desenvolvido em Java com Spring Boot e e
 🔗 [Repositório do Backend](https://github.com/usuario/backend-vm-monitoramento) <!-- substitua pelo link real -->
 
 **Funcionalidades:**
-- Autenticação com Spring Security e JWT.
-- API REST para listar, criar, iniciar, pausar, parar e excluir máquinas virtuais.
-- Regras de negócio: limite de 5 VMs por usuário.
-- Integração completa com o frontend via HTTP.
+- [x] Autenticação com Spring Security e JWT.
+- [x] API REST para listar, criar, iniciar, pausar, parar e excluir máquinas virtuais.
+- [x] Regras de negócio: limite de 5 VMs por usuário.
+- [x] Integração completa com o frontend via HTTP.
+- [x] API documentada com Swagger.
+- [x] Configurado para Docker e Docker Compose.
 
 ---
 
